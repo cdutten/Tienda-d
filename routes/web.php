@@ -12,12 +12,8 @@
 */
 
 Route::get('/', function () {
-
-    $a = 5;
-    echo ('azucar');
-    $a = 8;
-    $b = $a + 3;
-    echo $b;
-
     return view('welcome');
 });
+
+Route::resource('brand', 'BrandController');
+
